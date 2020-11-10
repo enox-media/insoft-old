@@ -1,0 +1,254 @@
+.mdl-button--fab.mdl-button--colored {
+	background: #3f81ad;
+	color: rgb(255,255,255);
+}
+
+.mdl-button--fab.mdl-button--colored:hover {
+	background: #236490;
+}
+
+.mdl-button {
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    display: block;
+    position: relative;
+    height: 36px;
+    min-width: 64px;
+    padding: 0 8px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: visible;
+    will-change: box-shadow,transform;
+    -webkit-transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.mdl-button--fab .button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-23px,-12px);
+    -ms-transform: translate(-23px,-12px);
+    transform: translate(-23px,-12px);
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    -ms-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+}
+
+.mdl-button--fab .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-12px,-12px);
+    -ms-transform: translate(-12px,-12px);
+    transform: translate(-12px,-12px);
+    line-height: 24px;
+    width: 24px;
+}
+
+.mdl-button--fab {
+    border-radius: 50%;
+    height: 56px;
+    margin: auto;
+    min-width: 56px;
+    width: 56px;
+    padding: 0;
+    overflow: visible;
+    box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+    position: relative;
+    line-height: normal;
+	background: rgba(158,158,158,0.8);
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: none;
+}
+
+.mdl-button--fab:hover {
+	color: #fff;
+	background: rgba(158,158,158,1);
+}
+.mdl-button--fab.child:hover {
+	color: #000;
+}
+.mdl-button--fab_flinger-container {
+	position: fixed;
+	z-index: 9999;
+	bottom: 20px;
+	right: 20px;
+	transform: scale(0);
+	animation-name: grow;
+	animation-duration: .5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+.mdl-button--fab_flinger-container div.vsnotnumber {
+	display: inline;
+}
+.mdl-button--fab_flinger-container a:before {
+	content: "\E14C";
+	font-family: "Material Icons";
+	font-size: 24px;
+	display: block;
+	position: absolute;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-transition-duration: 0.35s;
+	-moz-transition-duration: 0.35s;
+	-o-transition-duration: 0.35s;
+	-ms-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+.mdl-button--fab_flinger-container a:after {
+	font-size: 16px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #fff;
+	padding: 5px 10px;
+    position: absolute;
+    white-space: nowrap;
+    right: 68px;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+	box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+}
+.mdl-button--fab_flinger-container a.mdl-button-text:after {
+	content:"Text Us";
+}
+.mdl-button--fab_flinger-container a.mdl-button-call:after {
+	content:"Call Us";
+}
+.mdl-button--fab_flinger-container a.mdl-button-email:after {
+	content:"Email Us";
+}
+.mdl-button--fab_flinger-container.is-showing-options > a .button-text {
+	opacity: 0;
+}
+.mdl-button--fab_flinger-container.is-showing-options > a:before {
+	opacity: 1;
+}
+.mdl-button--fab_flinger-container.is-showing-options .mdl-button--fab_flinger-options {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	-webkit-flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+}
+.mdl-button--fab_flinger-container.is-showing-options .mdl-button--fab_flinger-options a {
+	display: block;
+	-webkit-animation-name: enter;
+	animation-name: enter;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-duration: 0.1s;
+	animation-duration: 0.1s;
+	-webkit-transform-origin: bottom center;
+	-ms-transform-origin: bottom center;
+	transform-origin: bottom center;
+}
+.mdl-button--fab_flinger-container.is-showing-options .mdl-button--fab_flinger-options a:nth-of-type(1) {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.mdl-button--fab_flinger-container.is-showing-options .mdl-button--fab_flinger-options a:nth-of-type(2) {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.mdl-button--fab_flinger-container.is-showing-options .mdl-button--fab_flinger-options a:nth-of-type(3) {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.mdl-button--fab_flinger-container.is-showing-options .mdl-button--fab_flinger-options a:nth-of-type(4) {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.mdl-button--fab_flinger-container.is-showing-options .mdl-button--fab_flinger-options a:nth-of-type(5) {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+.mdl-button--fab_flinger-container.is-showing-options .mdl-button--fab_flinger-options a:nth-of-type(6) {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+.mdl-button--fab_flinger-container .mdl-button--fab_flinger-options {
+	position: absolute;
+	bottom: 100%;
+	margin-bottom: 10px;
+}
+.mdl-button--fab_flinger-container .mdl-button--fab_flinger-options a {
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	display: none;
+}
+@-webkit-keyframes enter {
+	from {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+}
+@keyframes enter {
+	from {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+}
+@keyframes grow {
+	0% {
+		transform: scale(0);
+	}
+	80% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* ===============================================
+Small Tablet/Large Phone Stylings (Optional)
+Supports 30em (480px) to 47.9375em (767px)
+------
+Useful for making minor adjustments between
+awkward sizes.
+=============================================== */
+/* ===============================================
+Tablet / Desktop Stylings
+Supports 48em (768px) and up
+=============================================== */
+@media only screen and (min-width: 48em) {
+	.mdl-button--fab_flinger-container {
+		display: none;
+	}
+}
